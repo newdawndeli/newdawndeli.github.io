@@ -35,8 +35,15 @@
             font-size: 1.5em;
         }
 
+        .description {
+            max-width: 600px;
+            margin: 20px 0 40px 0;
+            font-size: 1.1em;
+        }
+
         .menu {
             margin: 30px 0;
+            max-width: 600px;
         }
 
         .menu ul {
@@ -46,7 +53,14 @@
         }
 
         .menu li {
-            margin: 8px 0;
+            margin: 15px 0;
+            text-align: left;
+        }
+
+        .menu li span {
+            display: block;
+            font-size: 0.9em;
+            color: #8B0000; /* Darker red for description text */
         }
 
         .contact {
@@ -70,15 +84,33 @@
         <img src="NDD.png" alt="New Dawn Deli Logo">
         <h1>New Dawn Deli</h1>
         <h2>Fresh Starts Daily</h2>
+        <div class="description">
+            <p>New Dawn Deli at Food Hall TO is a welcoming, community-focused deli serving fresh soups, sandwiches, and salads crafted from locally sourced ingredients. Our mission is to empower survivors of abuse through trauma-informed culinary training, providing meaningful employment, skill development, and a supportive environment. By combining quality food with social impact, we offer both delicious meals and opportunities for growth and independence.</p>
+        </div>
     </header>
 
     <section class="menu">
         <h2>Menu</h2>
         <ul>
-            <li>Sandwiches</li>
-            <li>Soups</li>
-            <li>Salads</li>
-            <li>Specials</li>
+            <li>
+                <strong>Greek or Thai Chicken Breast Sandwich</strong> - $8.00
+                <span>Marinated chicken breast, roasted and sliced, served with fresh veggies and pickled onions on a soft roll. Choose between Greek or Thai seasoning.</span>
+            </li>
+            <li>
+                <strong>Garden Salad</strong> - $8.00
+                <span>A crisp mix of seasonal greens and vegetables, tossed with your choice of our house-made vinaigrette or other dressing.</span>
+            </li>
+            <li>
+                <strong>Add Chicken Breast to any salad</strong> - +$4.00
+            </li>
+            <li>
+                <strong>Soup of the Day</strong> - $10.00
+                <span>Freshly prepared, seasonal soups made from high-quality ingredients. Comforting and satisfying. Featured options: Lentil Soup, Chicken Soup, Roasted Tomato Basil.</span>
+            </li>
+            <li>
+                <strong>Beverages</strong> - $2.00
+                <span>Water, soft drinks, or tea.</span>
+            </li>
         </ul>
     </section>
 
