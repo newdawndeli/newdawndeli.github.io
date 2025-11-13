@@ -70,7 +70,7 @@
             color: #8B0000; /* slightly darker red for description text */
         }
 
-        /* Combo menu layout */
+        /* Combo menu layout as cards */
         .combo-menu {
             display: flex;
             flex-wrap: wrap;
@@ -82,8 +82,24 @@
         }
 
         .combo-menu li {
-            flex: 1 1 200px;  /* minimum width 200px, grows as needed */
+            flex: 1 1 200px;           /* minimum width 200px, grows as needed */
             text-align: center;
+            background: #FFF8DC;       /* soft cream background */
+            padding: 15px 10px;        /* spacing inside the card */
+            border-radius: 10px;       /* rounded corners */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* subtle shadow */
+            transition: transform 0.2s; /* smooth hover effect */
+        }
+
+        .combo-menu li:hover {
+            transform: translateY(-3px); /* lift card slightly on hover */
+        }
+
+        .combo-menu li span {
+            font-size: 0.85em;
+            color: #8B0000;
+            display: block;
+            margin-top: 5px;
         }
 
         .contact {
@@ -169,7 +185,7 @@
             </li>
         </ul>
 
-        <!-- Combo menu items -->
+        <!-- Combo menu items as cards -->
         <ul class="combo-menu">
             <li>
                 <strong>Soup of the Day</strong> – $8.00
