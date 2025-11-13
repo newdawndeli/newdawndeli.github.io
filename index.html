@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Dawn Deli</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Prata&display=swap" rel="stylesheet">
+
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Lato', sans-serif;
             background: linear-gradient(to bottom, #FFEC64, #FFD700); /* gradient from light gold to logo gold */
             color: #B22222; /* red text from your logo */
             display: flex;
@@ -25,14 +29,18 @@
             max-width: 80%;
         }
 
-        h1 {
+        h1, h2 {
+            font-family: 'Prata', serif;
             margin: 20px 0 10px 0;
+        }
+
+        h1 {
             font-size: 2.5em;
         }
 
         h2 {
-            margin: 10px 0;
             font-size: 1.5em;
+            margin: 10px 0;
         }
 
         .description {
@@ -71,10 +79,20 @@
             margin: 5px 0;
         }
 
+        a {
+            color: #B22222;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
         footer {
             margin-top: 50px;
             padding: 20px;
             font-size: 0.9em;
+            font-family: 'Lato', sans-serif;
         }
     </style>
 </head>
@@ -117,7 +135,7 @@
     <section class="contact">
         <h2>Location & Contact</h2>
         <p>Food Hall TO, 5210 Yonge St, North York, ON M2N 5P6</p>
-        <p>Email: <a href="mailto:contact@newdawndeli.ca" style="color:#B22222;">contact@newdawndeli.ca</a></p>
+        <p>Email: <a href="mailto:contact@newdawndeli.ca">contact@newdawndeli.ca</a></p>
     </section>
 
     <footer>
