@@ -21,7 +21,7 @@
         }
 
         header {
-            padding: 20px 20px 20px 20px;
+            padding: 20px;
         }
 
         header img {
@@ -70,6 +70,22 @@
             color: #8B0000; /* slightly darker red for description text */
         }
 
+        /* Combo menu layout */
+        .combo-menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 15px 0;
+            list-style: none;
+            padding: 0;
+        }
+
+        .combo-menu li {
+            flex: 1 1 200px;  /* minimum width 200px, grows as needed */
+            text-align: center;
+        }
+
         .contact {
             margin: 20px 0;
         }
@@ -94,24 +110,32 @@
             font-family: 'Lato', sans-serif;
         }
 
-@media (max-width: 768px) {
-    body {
-        padding-left: 15px;   /* adds space on the left */
-        padding-right: 15px;  /* adds space on the right */
-    }
+        /* Mobile-only adjustments */
+        @media (max-width: 768px) {
+            body {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
 
-    .menu ul {
-        padding-left: 0;  /* optional: remove default ul padding */
-        padding-right: 0;
-    }
+            .menu ul {
+                padding-left: 0;
+                padding-right: 0;
+            }
 
-    section {
-        margin-left: 0;   /* optional: override any section margins */
-        margin-right: 0;
-    }
-}
+            section {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
 
-        
+        /* Stack combo items on very small screens */
+        @media (max-width: 480px) {
+            .combo-menu {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -143,9 +167,13 @@
             <li>
                 <strong>Add Chicken Breast to any salad</strong> +$4.00
             </li>
+        </ul>
+
+        <!-- Combo menu items -->
+        <ul class="combo-menu">
             <li>
                 <strong>Soup of the Day</strong> – $8.00
-                <span>Freshly prepared, seasonal soups made from high-quality ingredients. Comforting and satisfying. Featured options: Lentil Soup, Chicken Soup, Roasted Tomato Basil.</span>
+                <span>Freshly prepared, seasonal soups made from high-quality ingredients. Featured: Lentil Soup, Chicken Soup, Roasted Tomato Basil.</span>
             </li>
             <li>
                 <strong>Soup and 1⁄2 Sandwich Deal</strong> – $15.00
@@ -155,6 +183,9 @@
                 <strong>Soup and Salad Deal</strong> – $15.00
                 <span>Soup of the day served with one of our fresh crisp salads.</span>
             </li>
+        </ul>
+
+        <ul>
             <li>
                 <strong>Beverages</strong> – $2.00
                 <span>Water, soft drinks, or tea.</span>
